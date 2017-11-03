@@ -3,38 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Hello world</title>
-    <style type="text/css">
-    	.people-table {
-			border: 1px solid indianred;
-			background:bisque;
-			border-spacing: 0;
-    	}
-    </style>
-</head>
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    </head>
 <body>
 
 Hello world! <br/> 
 
-Mano vardas <a href="https://www.facebook.com/jevgenij.dmitrijev">Jevgenij</a>.<br/> 
+Mano vardas <a target="_blank" href="https://www.facebook.com/paulius.zemelis">Paulius</a>.<br/> 
 
 <table id="people" class="people-table">
-	<thead style="    background: aquamarine; font-weight: 800;">
+	<thead class="table-head">
 		<td>Vardas</td>
 		<td>Pavardė</td>
 		<td>Amžius</td>
 		<td>Miestas</td>
+		<td>Nuotrauka</td>
+		<td>URL</td>
 	</thead>
-	<tbody style="background: cadetblue;">
+	<tbody class="table-body">
 		<tr>
-			<td>Jevgenij</td>
-			<td>Dmitrijev</td>
+			<td>Paulius</td>
+			<td>Žemelis</td>
 			<td>-</td>
 			<td>Kaunas</td>
+			<td><img src="images/paulius.jpg"></td>
+			<td><a href="about-me.html">More...</td>
 		</tr>
 		<tr>
 			<td>Karolis</td>
 			<td>Dadura</td>
 			<td>-</td>
+			<td>-</td>
+			<td><img src="https://images.sftcdn.net/images/t_optimized,f_auto/p/be7e02a6-9b32-11e6-a223-00163ec9f5fa/568723425/talking-larry-the-bird-logo.png" height="150" width="150"></td>
 			<td>-</td>
 		</tr>
 	</tbody>
