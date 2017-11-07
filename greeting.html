@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User greeting</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+<script type="text/javascript">
+
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+var languages = ["en", "lt", "de", "ru", "ee", "lv", "pl", "es", "fr", "it"];
+
+	var translations = {
+		"en": "Hello world !",
+		"lt": "Labas pasauli !",
+		"de": "Hallo Welt !",
+		"ru": "Привет мир !",
+		"ee": "Tere maailm !",
+		"lv": "Sveiki pasaule !",
+		"pl": "Witaj, świecie !",
+		"es": "Hola mundo !",
+		"fr": "Bonjour le monde !",
+		"it": "Ciao mondo !"
+	}
+
+	var currentLanguageIndex = getLanguage();
+
+	function getLanguage()
+	{
+		var date = new Date();
+			date = date.getSeconds() % 10;
+		 	date = languages[date];
+		
+		 	return date;
+	 	
+
+	}
+
+	function greetUser ()
+	
+	{  
+		document.write(translations[currentLanguageIndex]);
+		
+	}
+
+	greetUser();
+	</script>
+
+</body>
+</html>
